@@ -1,0 +1,159 @@
+
+
+--- !u!1 &1
+GameObject:
+  m_ObjectHideFlags: 0
+  serializedVersion: 4
+  m_PrefabInstanceStatus: {assemblyName: , guid: , typeHash: 0}
+  m_PrefabAsset: {guid: , typeHash: 0, pathName: }
+  m_Name: TestScene
+  m_Component:
+  - component: {typeID: 4}
+    gameObject: {fileID: 0}
+    serializedVersion: 2
+    m_Enabled: 1
+    m_EditorHideFlags: 0
+    m_PrefabInstanceStatus: {assemblyName: , guid: , typeHash: 0}
+    m_PrefabAsset: {guid: , typeHash: 0, pathName: }
+    m_Name:
+    m_ComponentType: {assemblyQualifiedName: UnityEngine.GameObject, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null}
+    m_Script: {fileID: 11500000, guid: f3dgggddkf8, typeHash: 4269874639}
+  - component: {typeID: 22}
+    gameObject: {fileID: 0}
+    serializedVersion: 2
+    m_Enabled: 1
+    m_EditorHideFlags: 0
+    m_PrefabInstanceStatus: {assemblyName: , guid: , typeHash: 0}
+    m_PrefabAsset: {guid: , typeHash: 0, pathName: }
+    m_Name:
+    m_ComponentType: {assemblyQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null}
+    m_Script: {fileID: 11500000, guid: f3dgggddkf8, typeHash: 4269874639}
+    m_LocalPosition: {x: 0, y: 0, z: 0}
+    m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+    m_LocalScale: {x: 1, y: 1, z: 1}
+    m_Children: []
+    m_Father: {fileID: 0}
+    m_RootOrder: 0
+  - component: {typeID: 23}
+    gameObject: {fileID: 0}
+    serializedVersion: 2
+    m_Camera:
+      serializedVersion: 2
+      m_ObjectHideFlags: 0
+      m_PrefabInstanceStatus: {assemblyName: , guid: , typeHash: 0}
+      m_PrefabAsset: {guid: , typeHash: 0, pathName: }
+      m_Name:
+      m_ComponentType: {assemblyQualifiedName: UnityEngine.Camera, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null}
+      m_Script: {fileID: 11500000, guid: f3dgggddkf8, typeHash: 4269874639}
+      m_Enabled: 1
+      m_EditorHideFlags: 0
+      m_PrefabInstanceStatus: {assemblyName: , guid: , typeHash: 0}
+      m_PrefabAsset: {guid: , typeHash: 0, pathName: }
+      m_ClearFlag: 2
+      m_BackgroundColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      m_NearClipPlane: 0.3
+      m_FarClipPlane: 1000
+      m_Orthographic: 0
+      m_OrthographicSize: 5
+      m_FieldOfView: 60
+      m_RenderingPath: 2
+      m_HDR: 0
+      m_AllowHDR: 1
+      m_AllowMSAA: 1
+      m_CullingMask:
+        serializedVersion: 2
+        m_Bits: 4294967295
+      m_PixelRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      m_TargetTexture: {fileID: 0}
+      m_GateFitMode: 3
+      m_LensShift: {x: 0, y: 0}
+      m_PhysicalCamera:
+        serializedVersion: 2
+        m_FocalLength: 50
+        m_SensorSize: {x: 36, y: 24}
+        m_LensShift: {x: 0, y: 0}
+        m_GateFitMode: 3
+      m_Hdr:
+        serializedVersion: 2
+        m_ExposureValue: 0
+        m_MaxWhiteValue: 1.79769313486232e+308
+        m_MinExposureValue: -100
+        m_MaxApertureValue: 32
+        m_ExplicitMinExposureValue: 0
+      m_ClearStencil: 0
+      m_DepthTextureMode: 0
+      m_RenderTarget: {fileID: 0}
+      m_TargetEye: 3
+    m_FlareLayer: 0
+    m_ProjectionMatrix:
+      serializedVersion: 2
+      mRows:
+      - {x: 1.19125768e-07, y: 0, z: 0, w: 0}
+      - {x: 0, y: 1.19125768e-07, z: 0, w: 0}
+      - {x: 0, y: 0, z: 1.00043475, w: -0.0004347549}
+      - {x: 0, y: 0, z: 0, w: 1}
+    m_NonJitteredProjectionMatrix:
+      serializedVersion: 2
+      mRows:
+      - {x: 1.19125768e-07, y: 0, z: 0, w: 0}
+      - {x: 0, y: 1.19125768e-07, z: 0, w: 0}
+      - {x: 0, y: 0, z: 1.00043475, w: -0.0004347549}
+      - {x: 0, y: 0, z: 0, w: 1}
+    m_UseJitteredProjectionMatrixForTransparentRendering: 0
+    m_AllowDynamicResolution: 0
+    m_DynamicResolutionScale: 1
+    m_CullingMaskCount: 32
+    m_CullingMask: [4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    m_UseOcclusionCulling: 1
+    m_RenderingPath: 2
+    m_AllowHDR: 1
+    m_AllowMSAA: 1
+    m_ForceIntoRenderTexture: 0
+    m_ClearFlags: 2
+    m_BackgroundColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    m_NearClipPlane: 0.3
+    m_FarClipPlane: 1000
+    m_Orthographic: 0
+    m_OrthographicSize: 5
+    m_FieldOfView: 60
+    m_PixelRect:
+      x: 0
+      y: 0
+      width: 1920
+      height: 1080
+    m_TargetTexture: {fileID: 0}
+    m_GateFitMode: 3
+    m_LensShift: {x: 0, y: 0}
+    m_PhysicalCamera:
+      serializedVersion: 2
+      m_FocalLength: 50
+      m_SensorSize: {x: 36, y: 24}
+      m_LensShift: {x: 0, y: 0}
+      m_GateFitMode: 3
+    m_Hdr:
+      serializedVersion: 2
+      m_ExposureValue: 0
+      m_MaxWhiteValue: 1.79769313486232e+308
+      m_MinExposureValue: -100
+      m_MaxApertureValue: 32
+      m_ExplicitMinExposureValue: 0
+    m_ClearStencil: 0
+    m_DepthTextureMode: 0
+    m_RenderTarget: {fileID: 0}
+    m_TargetEye: 3
+    m_Hdr:
+      serializedVersion: 2
+      m_ExposureValue: 0
+      m_MaxWhiteValue: 1.79769313486232e+308
+      m_MinExposureValue: -100
+      m_MaxApertureValue: 32
+      m_ExplicitMinExposureValue: 0
+    m_ClearStencil: 0
+    m_DepthTextureMode: 0
+    m_RenderTarget: {fileID: 0}
+    m_TargetEye: 3
+

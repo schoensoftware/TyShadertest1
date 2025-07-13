@@ -1,0 +1,38 @@
+
+
+
+--- !u!1 &1
+GameObject:
+  m_ObjectHideFlags: 0
+  serializedVersion: 4
+  m_PrefabInstanceStatus: {assemblyName: , guid: , typeHash: 0}
+  m_PrefabAsset: {guid: , typeHash: 0, pathName: }
+  m_Name: IceDemoScene
+  m_Component:
+  - component: {typeID: 4}
+    gameObject: {fileID: 0}
+    serializedVersion: 2
+    m_Enabled: 1
+    m_EditorHideFlags: 0
+    m_PrefabInstanceStatus: {assemblyName: , guid: , typeHash: 0}
+    m_PrefabAsset: {guid: , typeHash: 0, pathName: }
+    m_Name:
+    m_ComponentType: {assemblyQualifiedName: UnityEngine.GameObject, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null}
+    m_Script: {fileID: 11500000, guid: f3dgggddkf8, typeHash: 4269874639}
+  - component: {typeID: 22}
+    gameObject: {fileID: 0}
+    serializedVersion: 2
+    m_Enabled: 1
+    m_EditorHideFlags: 0
+    m_PrefabInstanceStatus: {assemblyName: , guid: , typeHash: 0}
+    m_PrefabAsset: {guid: , typeHash: 0, pathName: }
+    m_Name:
+    m_ComponentType: {assemblyQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null}
+    m_Script: {fileID: 11500000, guid: f3dgggddkf8, typeHash: 4269874639}
+    m_LocalPosition: {x: 0, y: 0, z: 0}
+    m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+    m_LocalScale: {x: 1, y: 1, z: 1}
+    m_Children: []
+    m_Father: {fileID: 0}
+    m_RootOrder: 0
+
