@@ -65,7 +65,7 @@ public class IceDemoScript : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Could not find shader: Custom/FullyFixedIceShader");
+            Debug.LogError("Could not find shader: Custom/IceShader");
         }
     }
 }
