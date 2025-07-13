@@ -3,14 +3,16 @@
 
 
 
+
+
 using UnityEngine;
 
 public class IceDemoScript : MonoBehaviour
 {
     void Start()
     {
-        // Create the material using our fixed shader
-        Shader shader = Shader.Find("Custom/FixedAdvancedIceShader");
+        // Create the material using our ice shader
+        Shader shader = Shader.Find("Custom/IceShader");
         if (shader != null)
         {
             Material iceMaterial = new Material(shader);
@@ -63,10 +65,12 @@ public class IceDemoScript : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Could not find shader: Custom/FixedAdvancedIceShader");
+            Debug.LogError("Could not find shader: Custom/FullyFixedIceShader");
         }
     }
 }
+
+
 
 
 
