@@ -22,6 +22,7 @@ public class IceDemoScript : MonoBehaviour
             iceMaterial.SetFloat("_RefractionStrength", 0.3f);
             iceMaterial.SetFloat("_ReflectionStrength", 0.6f);
             iceMaterial.SetFloat("_FresnelPower", 2.5f);
+            iceMaterial.SetFloat("_RimPower", 1.5f); // Add rim lighting effect
 
             // Create multiple ice blocks
             for (int i = -1; i <= 1; i++)
