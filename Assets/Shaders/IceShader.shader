@@ -14,6 +14,7 @@ Shader "Custom/AdvancedIceShader"
         _FresnelPower ("Fresnel Power", Range(0.01, 10)) = 5
         [HideInInspector] _NormalMap ("Normal Map", 2D) = "white" {} // Optional normal map
         _RefractionTex ("Refraction Texture", 2D) = "" {} // Texture to simulate refraction
+        _RimPower ("Rim Light Power", Range(0, 10)) = 3 // Controls intensity of rim lighting
     }
     SubShader
     {
