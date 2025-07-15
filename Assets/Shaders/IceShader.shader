@@ -1,9 +1,4 @@
 
-
-
-
-
-
 Shader "Custom/AdvancedIceShader"
 {
     Properties
@@ -19,19 +14,17 @@ Shader "Custom/AdvancedIceShader"
     SubShader
     {
         Tags { "RenderType"="Transparent" "Queue"="Transparent" }
-
         Pass
         {
             Name "ForwardLit"
             Tags { "LightMode"="UniversalForward" }
-            Blend SrcAlpha OneMinusSrcAlpha, WriteMask RGB
+            Blend SrcAlpha OneMinusSrcAlpha
 
             HLSLPROGRAM
             #pragma vertex vert
             #pragma fragment frag
 
             // Include necessary URP headers for latest compatibility
-            #pragma enable_keywords des
             #pragma target 3.0
 
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
@@ -191,7 +184,3 @@ Shader "Custom/AdvancedIceShader"
     }
     FallBack "Diffuse"
 }
-
-
-
-
