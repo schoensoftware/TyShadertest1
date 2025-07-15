@@ -30,7 +30,25 @@ Shader "Custom/AdvancedIceShader"
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Shadows.hlsl"
-            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Math/Transform.hlsl"
+
+            // Define transformation functions manually since Transform.hlsl is not available
+            float3x4 UnityObjectToWorld;
+            float3x4 UnityWorldToObject;
+
+            float3 TransformObjectToWorld(float4 positionOS)
+            {
+                return mul(UnityObjectToWorld, positionOS).xyz;
+            }
+
+            float3 TransformObjectToWorldNormal(float3 normalOS)
+            {
+                return normalize(mul((float3x3)UnityObjectToWorld, normalOS));
+            }
+
+            float4 TransformObjectToHClip(float4 positionOS)
+            {
+                return UnityObjectToClip(positionOS);
+            }
 
             struct Attributes
             {
@@ -160,7 +178,20 @@ Shader "Custom/AdvancedIceShader"
 
             // Include necessary URP headers for latest compatibility
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
-            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Math/Transform.hlsl"
+
+            // Define transformation functions manually since Transform.hlsl is not available
+            float3x4 UnityObjectToWorld;
+            float3x4 UnityWorldToObject;
+
+            float3 TransformObjectToWorld(float4 positionOS)
+            {
+                return mul(UnityObjectToWorld, positionOS).xyz;
+            }
+
+            float4 TransformObjectToHClip(float4 positionOS)
+            {
+                return UnityObjectToClip(positionOS);
+            }
 
             struct Attributes
             {
