@@ -34,13 +34,14 @@ This Unity project demonstrates an advanced ice shader for the Universal Render 
 
 1. **Create a new material**:
    - Right-click in the Project window > Create > Material
-   - Select "AdvancedIceShader" from the shader dropdown
+   - Select "Custom/AdvancedIceShader" from the shader dropdown
 
 2. **Adjust properties**:
    - **Base Color**: Change the color and transparency of the ice
    - **Refraction Strength**: Controls how much light bends through the ice
    - **Reflection Strength**: Adjusts reflectiveness
    - **Fresnel Power**: Controls edge highlights
+   - **Rim Power**: Adjusts the intensity of rim lighting for better edge definition
 
 3. **Apply to objects**:
    - Drag the material onto any 3D object in your scene
@@ -78,11 +79,14 @@ The project includes test scripts that demonstrate the shader's capabilities:
 
 ## Shader Features
 
-The `AdvancedIceShader.shader` includes:
-- **Refraction**: Light bending through transparent surfaces
-- **Reflection**: Realistic reflections based on viewing angle
-- **Fresnel Effect**: More reflection at grazing angles
+The `Custom/AdvancedIceShader` includes:
+- **Refraction**: Light bending through transparent surfaces with texture support
+- **Reflection**: Realistic reflections based on viewing angle and Fresnel effect
+- **Fresnel Effect**: More reflection at grazing angles with adjustable power
 - **Transparency**: Proper alpha handling for realistic ice appearance
+- **Normal Mapping**: Detailed surface effects using tangent-space normal maps
+- **Rim Lighting**: Enhanced edge definition for better visual separation
+- **Optimized URP Pipeline**: Full compatibility with Unity's Universal Render Pipeline
 
 ## License
 

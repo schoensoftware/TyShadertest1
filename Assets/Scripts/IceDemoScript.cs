@@ -11,8 +11,8 @@ public class IceDemoScript : MonoBehaviour
 {
     void Start()
     {
-        // Create the material using our ice shader
-        Shader shader = Shader.Find("Custom/IceShader");
+        // Create the material using our advanced ice shader
+        Shader shader = Shader.Find("Custom/AdvancedIceShader");
         if (shader != null)
         {
             Material iceMaterial = new Material(shader);
@@ -22,6 +22,7 @@ public class IceDemoScript : MonoBehaviour
             iceMaterial.SetFloat("_RefractionStrength", 0.3f);
             iceMaterial.SetFloat("_ReflectionStrength", 0.6f);
             iceMaterial.SetFloat("_FresnelPower", 2.5f);
+            iceMaterial.SetFloat("_RimPower", 1.5f); // Add rim lighting effect
 
             // Create multiple ice blocks
             for (int i = -1; i <= 1; i++)
@@ -65,7 +66,7 @@ public class IceDemoScript : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Could not find shader: Custom/IceShader");
+            Debug.LogError("Could not find shader: Custom/AdvancedIceShader");
         }
     }
 }
