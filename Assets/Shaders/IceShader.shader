@@ -188,6 +188,11 @@ Shader "Custom/AdvancedIceShader"
                 return mul(UnityObjectToWorld, positionOS).xyz;
             }
 
+            float3 TransformObjectToWorldNormal(float3 normalOS)
+            {
+                return normalize(mul((float3x3)UnityObjectToWorld, normalOS));
+            }
+
             float4 TransformObjectToHClip(float4 positionOS)
             {
                 return UnityObjectToClip(positionOS);
