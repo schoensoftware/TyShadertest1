@@ -47,7 +47,7 @@ Shader "Custom/AdvancedIceShader"
 
             float4 TransformObjectToHClip(float4 positionOS)
             {
-                return UnityObjectToClip(positionOS);
+                return UnityObjectToClipPos(positionOS);
             }
 
             struct Attributes
@@ -91,7 +91,7 @@ Shader "Custom/AdvancedIceShader"
                 float3 worldBitangent = cross(worldNormal, worldTangent) * input.tangentOS.w;
 
                 // Use proper URP transformation for clip space
-                output.positionHCS = TransformObjectToHClip(worldPos);
+                output.positionHCS = TransformObjectToHClip(input.positionOS);
                 output.worldNormal = normalize(worldNormal);
                 output.uv = input.uv;
                 output.viewDir = normalize(_WorldSpaceCameraPos - worldPos);
@@ -195,7 +195,7 @@ Shader "Custom/AdvancedIceShader"
 
             float4 TransformObjectToHClip(float4 positionOS)
             {
-                return UnityObjectToClip(positionOS);
+                return UnityObjectToClipPos(positionOS);
             }
 
             struct Attributes
@@ -215,7 +215,7 @@ Shader "Custom/AdvancedIceShader"
             {
                 Varyings output;
                 float3 worldPos = TransformObjectToWorld(input.positionOS);
-                output.positionHCS = TransformObjectToHClip(worldPos);
+                output.positionHCS = TransformObjectToHClip(input.positionOS);
                 return output;
             }
 
