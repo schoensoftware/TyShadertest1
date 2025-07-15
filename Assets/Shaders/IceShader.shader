@@ -30,6 +30,7 @@ Shader "Custom/AdvancedIceShader"
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Shadows.hlsl"
+            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Math/Transform.hlsl"
 
             struct Attributes
             {
@@ -156,6 +157,10 @@ Shader "Custom/AdvancedIceShader"
             HLSLPROGRAM
             #pragma vertex vert_depth
             #pragma fragment frag_depth
+
+            // Include necessary URP headers for latest compatibility
+            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
+            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Math/Transform.hlsl"
 
             struct Attributes
             {
